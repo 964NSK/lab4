@@ -8,7 +8,8 @@ public class Square extends Shape {
     int line;
 
     @Override
-    public void getS() {
+    public double getS() {
         s = line * line;
+        return s;
     }
 }

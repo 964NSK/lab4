@@ -10,8 +10,9 @@ public class Shape {
     public String name;
     public double s;
 
-    public void getS() {
+    public double getS() {
         s = a * b;
+        return s;
     }
 
 }

@@ -15,30 +15,21 @@ public class Triangle extends Shape {
         this.y3 = y3;
     }
 
-    double line1 = findLine(x1, y1, x2, y2);
-    double line2 = findLine(x1, y1, x3, y3);
-    double line3 = findLine(x2, y2, x3, y3);
-    double p = getP(line1, line2, line3);
-
-
-
-
-    public double findLine(int pointX1, int pointY1, int pointX2, int pointY2) {
-        double line = sqrt(pow((pointX2 - pointX1), 2) + pow((pointY2 - pointY1), 2));
-        return line;
-    }
-
-    public double getP(double l1, double l2, double l3) {
-        double prmtr = (l1 + l2 + l3) / 2;
-        return prmtr;
-
-    }
+    double line1;
+    double line2;
+    double line3;
+    double p;
 
     @Override
-    public void getS() {
+    public double getS() {
+        line1 = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
+        line2 = sqrt(pow((x3 - x1), 2) + pow((y3 - y1), 2));
+        line3 = sqrt(pow((x3 - x2), 2) + pow((y3 - y2), 2));
+        p = (line1 + line2 + line3) / 2;
         s = sqrt(p*(p-line1)*(p-line2)*(p-line3));
 
 
+        return s;
     }
 
 }

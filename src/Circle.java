@@ -9,8 +9,9 @@ public class Circle extends Shape {
     public int radius;
 
     @Override
-    public void getS() {
+    public double getS() {
         s = 2 * P * radius;
+        return s;
     }
 
 }
