@@ -1,6 +1,3 @@
-import java.lang.Math.*;
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         Triangle triangle1 = new Triangle(Colors.WHITE, "Triangle1", 1, 31, 42, 6, 82, 90);
