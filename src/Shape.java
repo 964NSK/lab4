@@ -14,5 +14,10 @@ public class Shape {
         s = a * b;
         return s;
     }
+    public void getInfo () {
+        System.out.println("Type of Shape: " + name);
+        System.out.println("S = " + getS());
+        System.out.println("Color: " + colorType);
+    }
 
 }

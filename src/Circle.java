@@ -1,10 +1,11 @@
 public class Circle extends Shape {
-    public Circle(Colors colors, String name, int radius, int centr) {
+    public Circle(Colors colors, String name, int radius, String centr) {
         super(colors, name);
         this.centr = centr;
         this.radius = radius;
     }
-    public int centr;
+    public String centr;
+
 
     public int radius;
 

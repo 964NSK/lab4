@@ -20,6 +20,7 @@ public class Triangle extends Shape {
     double line3;
     double p;
 
+
     @Override
     public double getS() {
         line1 = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
@@ -31,5 +32,6 @@ public class Triangle extends Shape {
 
         return s;
     }
+
 
 }
