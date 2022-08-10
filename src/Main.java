@@ -1,24 +1,24 @@
 public class Main {
     public static void main(String[] args) {
-        Triangle triangle1 = new Triangle(Colors.WHITE, "Triangle1", 1, 31, 42, 6, 82, 90);
+        Triangle triangle1 = new Triangle(Colors.WHITE, "Triangle1", new Point (4,2), new Point(10, 10), new Point(-5, -6));
         triangle1.getInfo();
 
         System.out.println();
 
-        Triangle triangle2 = new Triangle(Colors.BLACK, "Triangle2", 5, 31, 50, 68, 81, 330);
+        Triangle triangle2 = new Triangle(Colors.BLACK, "Triangle2", new Point(41,22), new Point(21, 10), new Point(-5, -6) );
         triangle2.getInfo();
         System.out.println();
-        Triangle triangle3 = new Triangle(Colors.YELLOW, "Triangle3", 1, 2, 6, 15, 99, 109);
+        Triangle triangle3 = new Triangle(Colors.YELLOW, "Triangle3", new Point(1,1), new Point(10, 10), new Point(5, -6));
         triangle3.getInfo();
 
         System.out.println();
 
-        Triangle triangle4 = new Triangle(Colors.PINK, "Triangle4", 25, 31, 42, 6, 82, 100);
+        Triangle triangle4 = new Triangle(Colors.PINK, "Triangle4", new Point(4,20), new Point(100, 100), new Point(-5, -6));
         triangle4.getInfo();
 
         System.out.println();
 
-        Circle circle1 = new Circle(Colors.PINK, "Circle1", 25, "A");
+        Circle circle1 = new Circle(Colors.PINK, "Circle1", 25, new Point(1,1));
         circle1.getInfo();
 
         System.out.println("Max S = " + maxS(triangle1.s,triangle2.s, triangle3.s, triangle4.s, circle1.s));

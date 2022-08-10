@@ -1,13 +1,11 @@
 public class Circle extends Shape {
-    public Circle(Colors colors, String name, int radius, String centr) {
+    public Circle(Colors colors, String name, double radius, Point a) {
         super(colors, name);
-        this.centr = centr;
+        this.a = a;
         this.radius = radius;
     }
-    public String centr;
-
-
-    public int radius;
+    private Point a;
+    public double radius;
 
     @Override
     public double getS() {
